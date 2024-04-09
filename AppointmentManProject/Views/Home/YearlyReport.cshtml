@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Appointment>
+@{
+    // Get the current year
+    string currentYear = DateTime.Today.ToString("yyyy");
+    string pageTitle = $"The Year of {currentYear} Appointment Report";
+}
+
+<h2>@pageTitle</h2>
+
+@if (Model != null && Model.Count() > 0)
+{
+    <table id="appointmentTable" class="table table-bordered table-hover table-striped" width="100%">
+        <thead>
+            <tr>
+                <th>Appointment Id</th>
+                <th>Customer Name</th>
+                <th>Appointment Type</th>
+                <th>Customer Phone</th>
+                <th>Start</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td width="10%">@item.appointmentId</td>
+                    <td width="10%">@item.customerName</td>
+                    <td width="10%">@item.appointmentType</td>
+                    <td width="10%">@item.customerPhone</td>
+                    <td width="10%">@item.appointmentStart</td>
+                    <td width="10%">@item.appointmentEnd</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a href="javascript:window.print();" class="btn btn-primary">Print Report</a>
+    <a asp-action="Index" class="btn btnalert-primary mx-1">Back To List</a>
+}
+else
+{
+    <br />
+    <p><b>No Records Found</b></p>
+}

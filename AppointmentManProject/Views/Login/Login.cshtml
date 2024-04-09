@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<div style="text-align: center;">
+    <h2>Login</h2>
+
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+    }
+
+    @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+    {
+        <div style="margin-bottom: 10px;">
+            <label for="Username" style="display: inline-block; width: 100px; text-align: right;">Username:</label>
+            <input type="text" name="username" required />
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="Password" style="display: inline-block; width: 100px; text-align: right;">Password:</label>
+            <input type="password" name="password" required />
+        </div>
+        <div>
+            <input type="submit" value="Login" />
+        </div>
+    }
+</div>
