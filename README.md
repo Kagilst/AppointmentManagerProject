@@ -4,7 +4,7 @@ The project was originally hosted using Microsoft Azure which hosted both the pr
 Currently this project is no longer being hosted using Azure so in order to view it functionality first hand you would have to setup your own mysql database and download the proper connectors (.NET, Visual Studio).
 Otherwise you can view this video to see a demonstration showing most of the applications functionality. ""
 If you choose to set up your own test envirorment you can use the following mysql code to create a test database
--- Create user Table
+"-- Create user Table
 CREATE TABLE user (
     userId INT AUTO_INCREMENT PRIMARY KEY,
     userName VARCHAR(255),
@@ -38,7 +38,6 @@ VALUES
         DATE_ADD(DATE_ADD(NOW(), INTERVAL 30 DAY), INTERVAL 1 HOUR), 
         'test'
     ),
-
     (
 		1, 
         'Jane Smith', 
@@ -47,7 +46,6 @@ VALUES
         DATE_ADD(NOW(), INTERVAL 37 DAY), 
         DATE_ADD(DATE_ADD(NOW(), INTERVAL 37 DAY), INTERVAL 1 HOUR),  
         'test'),
-
     (
 		1, 
         'Micheal Johnson', 
@@ -56,7 +54,6 @@ VALUES
         DATE_ADD(NOW(), INTERVAL 17 DAY), 
         DATE_ADD(DATE_ADD(NOW(), INTERVAL 17 DAY), INTERVAL 1 HOUR), 
         'test'),
-
     (
 		1, 
         'Sarah Brown', 
@@ -65,7 +62,6 @@ VALUES
         DATE_ADD(NOW(), INTERVAL 19 DAY), 
         DATE_ADD(DATE_ADD(NOW(), INTERVAL 19 DAY), INTERVAL 1 HOUR), 
         'test'),
-
     (
 		1, 
         'David Williams', 
