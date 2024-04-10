@@ -1,10 +1,10 @@
-This project was made in Visual studio using the ASP.NET Core Web App (Model-View-Controller) template and was coded using the .NET 7.0 Framework.
+This Application was made in Visual studio using the ASP.NET Core Web App (Model-View-Controller) template and was coded using the .NET 7.0 Framework.
 
-The goal of this project was to create a appointment management system using MVC and host it using a cloud based service. 
+The goal of this application was to create a appointment management system using MVC and host it using a cloud based service. 
 
-The project was originally hosted using Microsoft Azure which hosted both the project and the mysql database it was connected to.
+The Application was originally hosted using Microsoft Azure which hosted both the project and the mysql database.
 
-Currently this project is no longer being hosted using Azure so in order to view it functionality first hand you would have to setup your own mysql database.
+Currently this application is no longer being hosted using Azure so in order to view its functionality first hand you would have to setup your own mysql database.
 
 If you choose to set up your own test envirorment you can go through the LocalSetupGuide.docx which will walk you through how to setup the project to run locally.
 
